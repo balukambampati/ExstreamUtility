@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExstreamUtility", "ExstreamUtility\ExstreamUtility.csproj", "{3C715383-372F-46ED-9570-DC01ADC3B871}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C715383-372F-46ED-9570-DC01ADC3B871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C715383-372F-46ED-9570-DC01ADC3B871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C715383-372F-46ED-9570-DC01ADC3B871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C715383-372F-46ED-9570-DC01ADC3B871}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADAB9FEF-D822-4804-BDF5-47044991F381}
+	EndGlobalSection
+EndGlobal
