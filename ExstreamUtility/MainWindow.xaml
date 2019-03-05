@@ -5,8 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExstreamUtility"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Exstream Utility" MinHeight="800" MinWidth="1200" Margin="10" BorderBrush="Black" BorderThickness="1">
+ 
+    <Grid Name ="MainPane" Margin="3"  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="LeftPane" Width="250" />
+            <ColumnDefinition Name="RightPane" Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Name="LeftCoulmnPane">
+            <Grid.RowDefinitions>
+                <RowDefinition Name="RunTypeOptions" Height="200" />
+                <RowDefinition Name="ApprovalOptions" Height="300" />
+                <RowDefinition Name="ExVersion1" Height="200" />
+                <RowDefinition Name="DefaultOptions" Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.Column="0" Grid.RowSpan="4" >
+                <GroupBox Header ="Run Type" Foreground="Blue" FontWeight="Bold" FontStretch="Expanded" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" Grid.Column = "0" Grid.Row="0">
+                    <StackPanel x:Name="RunType" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header ="Approval State" Foreground="Blue" FontWeight="Bold" FontStretch="Expanded" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" Grid.Column = "0" Grid.Row="1">
+                    <StackPanel x:Name="ApprovalState" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header ="Exstream Version" Foreground="Blue" FontWeight="Bold" FontStretch="Expanded" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" Grid.Column = "0" Grid.Row="2">
+                    <StackPanel x:Name="ExVersion"  Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header ="Default Options" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" Grid.Column = "0" Grid.Row="3">
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+                        <RadioButton Content="Default Paths" MinHeight="20" Margin="5,10,10,5" IsChecked="True" Checked ="RadioDefaultPath_Click"/>
+                        <RadioButton Content="Custom Paths" MinHeight="20" Margin="5,10,10,5" Checked="RadioCustomPath_Click"/>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" Name="RightCoulmnPane">
+            <Grid.RowDefinitions>
+                <RowDefinition Name="ArgumentsRow" Height="150" />
+                <RowDefinition Name="ContentRow" Height="*" />
+                <RowDefinition Name="ResultPaneRow" Height="150" />
+            </Grid.RowDefinitions>
+            <GroupBox Header ="Arguments" Foreground="Blue" FontWeight="Bold" FontStretch="Expanded" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Stretch" Grid.Column = "0" Grid.Row="0">
+                <StackPanel Orientation="Horizontal" >
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <Label Width="100" FontWeight="Normal">Application Name</Label>
+                        <ListBox Name="AppNames" Height="100" Width="400" SelectionMode="Multiple" FontWeight="Normal" >
+                            <ListBoxItem Content="PUMA"/>
+                            <ListBoxItem Content ="Exstream Version 8.6.107 32-bit" />
+                            <ListBoxItem>Multibnbghnfhnfgnh</ListBoxItem>
+                            <ListBoxItem>BTSY</ListBoxItem>
+                            <ListBoxItem>Multi1</ListBoxItem>
+                            <ListBoxItem>Esign1</ListBoxItem>
+                            <ListBoxItem>Umbrella</ListBoxItem>
+                            <ListBoxItem>ACDEC</ListBoxItem>
+                        </ListBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" >
+                        <Label Width="100" FontWeight="Normal">Pub File Name</Label>
+                        <TextBox Name="PubName" FontWeight="Normal" MinHeight="20" MinWidth ="200" Width="200" Margin="5,10,10,5"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header ="Content" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Stretch" Grid.Column = "0" Grid.Row="1">
+            </GroupBox>
+            <GroupBox Header ="Output" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Stretch" Grid.Column = "0" Grid.Row="2">
+                <StackPanel Orientation="Vertical" >
+
+                </StackPanel>
+            </GroupBox>
+        </Grid>
     </Grid>
 </Window>
