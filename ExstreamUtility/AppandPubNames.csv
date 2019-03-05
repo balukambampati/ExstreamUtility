@@ -1,0 +1,7 @@
+Application Name,Pub Name,Environment,ExstreamVersion,ServerName
+Opt Esign,OPT.pub,INTG,8.6,2707
+EDGE Opt Esign,EDGEOPT.pub,USER,8.6,2707
+NDE Esign,NDE.pub,PROD,8.6,2707
+NDE Edge Esign,NDEEDGE.pub,PROD,8.6,2707
+Umbrella EDARS,UmbEDARS.pub,USER,8.6,2707
+Umbrella Batch,UmbBatch.pub,USER,8.6,2707

@@ -51,16 +51,16 @@
             <GroupBox Header ="Arguments" Foreground="Blue" FontWeight="Bold" FontStretch="Expanded" Margin="5,5,2,2" BorderBrush="Blue"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalContentAlignment="Top" HorizontalContentAlignment="Stretch" Grid.Column = "0" Grid.Row="0">
                 <StackPanel Orientation="Horizontal" >
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
-                        <Label Width="100" FontWeight="Normal">Application Name</Label>
-                        <ListBox Name="AppNames" Height="100" Width="400" SelectionMode="Multiple" FontWeight="Normal" >
-                            <ListBoxItem Content="PUMA"/>
+                        <Label Width="110" FontWeight="Normal">Application Name</Label>
+                        <ListBox x:Name="AppName" Height="100" Width="400" SelectionMode="Multiple" FontWeight="Normal" >
+                            <!--<ListBoxItem Content="PUMA"/>
                             <ListBoxItem Content ="Exstream Version 8.6.107 32-bit" />
                             <ListBoxItem>Multibnbghnfhnfgnh</ListBoxItem>
                             <ListBoxItem>BTSY</ListBoxItem>
                             <ListBoxItem>Multi1</ListBoxItem>
                             <ListBoxItem>Esign1</ListBoxItem>
                             <ListBoxItem>Umbrella</ListBoxItem>
-                            <ListBoxItem>ACDEC</ListBoxItem>
+                            <ListBoxItem>ACDEC</ListBoxItem>-->
                         </ListBox>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" >

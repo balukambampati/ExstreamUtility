@@ -29,15 +29,16 @@ namespace ExstreamUtility
             InitializeComponent();
             LoadUIElements loadUI = new LoadUIElements();
             loadUI.LoadRadioLabels();
+            loadUI.LoadListItems();
             BuildRadioButtons(loadUI.RunTypeRadio, loadUI.KeyType1);
             BuildRadioButtons(loadUI.ApprovalStateRadio, loadUI.KeyType2);
             BuildRadioButtons(loadUI.ExstreamVersionRadio, loadUI.KeyType3);
+            BuildListItems(loadUI.AppNames);
 
         }
 
         private void BuildRadioButtons(string[] ButtonNames, string keytype)
         {
-
             foreach (string runTypeRadio in ButtonNames)
             {
                 RadioButton radioButton = new RadioButton();
@@ -59,6 +60,17 @@ namespace ExstreamUtility
                 }
             }
 
+        }
+        private void BuildListItems(List<String> Names)
+        {
+            foreach(var item in Names)
+            {
+                ListBoxItem listItem = new ListBoxItem();
+                listItem.Content = item.ToString();
+                AppName.Items.Add(listItem);
+
+
+            }
         }
 
         //private void RadioPubbing_Click(object sender, RoutedEventArgs e)
@@ -139,18 +151,18 @@ namespace ExstreamUtility
 
         private void ListBoxAppName_Click(object sender, RoutedEventArgs e)
         {
-            List<int> selectedItemIndexes = (from object o in AppNames.SelectedItems select AppNames.Items.IndexOf(o)).ToList();
+            //List<int> selectedItemIndexes = (from object o in AppNames.SelectedItems select AppNames.Items.IndexOf(o)).ToList();
 
 
-            //AppNames.UnselectAll();
+            ////AppNames.UnselectAll();
 
-            foreach (int rowIndex in selectedItemIndexes)
-            {
+            //foreach (int rowIndex in selectedItemIndexes)
+            //{
 
-                // listBox.SelectedIndex = rowIndex;  // Tried this as well
-                AppNames.SelectedItem = AppNames.Items.GetItemAt(rowIndex);
+            //    // listBox.SelectedIndex = rowIndex;  // Tried this as well
+            //    AppNames.SelectedItem = AppNames.Items.GetItemAt(rowIndex);
 
-            }
+            //}
         }
         public void CreateWorkFlow()
         {
